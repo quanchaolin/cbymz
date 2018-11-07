@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.ln_dashed{border-bottom: dashed 1px #d4d4d4;margin:0 10px 10px;padding: 0;font-weight: bolder;}
+.ln_dashed span{border-radius: 3px;height: 24px;line-height: 24px;margin: 0;padding: 5px 10px 5px 5px;position: relative;background: url("") 5px no-repeat;font-size: 12px;}
+.ln_dashed span:before {  content: "\f05a";  font-family: FontAwesome;}
+.pagination{margin: 0}

@@ -1,0 +1,1 @@
+<?php return '[{"id":"17","name":"\\u4fe1\\u606f\\u7ba1\\u7406","pid":"0","child":[{"id":"22","name":"\\u6d88\\u606f\\u7ba1\\u7406","pid":"17","child":[],"url":"message\\/index"}]},{"id":"11","name":"\\u5fc3\\u613f\\u5355\\u7ba1\\u7406","pid":"0","child":[{"id":"12","name":"\\u5fc3\\u613f\\u5355","pid":"11","child":[],"url":"order\\/index\\/"}]}]';

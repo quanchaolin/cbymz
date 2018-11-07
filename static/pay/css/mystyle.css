@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+body{ background:#fbe7cf; max-width:480px; margin:0 auto;}
+ul,li,h3{list-style:none; margin:0; padding:0; }
+h3{list-style:none; margin:0; padding:0; line-height:0;}
+.swiper-container{padding:0; margin:0 0 10px  0;}
+.swiper-pagination{ bottom:10px;}
+img{width:100%; max-width:100%;}
+.clear{width:100%; height:0; clear:both;}
+.index{ width:100%; max-width:480px; min-height:640px; margin:0 auto; background:#fbe7cf url(../images/bg.jpg) no-repeat; background-size:100%;}
+.hongbao{padding:8.53rem 0 0 0;}
+input[type=button]{-webkit-appearance:none;outline:none}
+
+.hongbao h3,.list_box h3{text-align:center; margin:10px 0;}
+.hongbao h3 img{width:3rem;}
+.hongbao ul{ width:95%; margin:0 auto 0 auto;}
+.hongbao ul li{  float:left; width:25%; text-align:center; font-size:.3rem; color:#be1830; position:relative; font-weight:bold;}
+.hongbao ul li img{ width:2.25rem; margin:0 auto}
+.zfbox{position:fixed;top:auto; bottom:0;max-width:480px; width:100%; border-top:1px solid #ccc; display:none; z-index:9999}
+
+.btn{ float:left;display:block;width:50%;height:1.24rem; line-height:1.24rem;  background:#d30b23; color:#fff; text-align:center; font-size:.5rem; border:none;	-webkit-appearance:none;outline:none}
+.all_text{float:left;width:50%;height:1.24rem; line-height:1.24rem; background:#fff;  font-size:.5rem; text-indent:.5rem; color:#ff6600; font-weight:bold}
+
+
+.list_box{width:95%; margin:0 auto 40px auto;}
+.list_box h3 img{width:3rem;}
+.list{background:#fff;border-radius:8px; padding:20px;}
+.list_lh{ height:5.35rem; overflow:hidden;  }
+.list_lh li{ font-size:.42rem; height:1rem; line-height:1rem; text-align:left; color:#666; }
+.list_lh li p{ height:24px; line-height:24px;}
+.list_lh li p strong{color:#F00;}
+
+.not-allow-scroll{overflow:hidden;}
+.i_tips{display:none; position:absolute; top:5px; color:#ffeb28; width:100%; text-align:center; font-size:.4rem; font-weight:bold}
+.on .i_tips{display:block;}
+.popup-text{padding:30px; font-size:.5rem; color:#F00; text-align:center}
+.popup-box,.popup-box2{ display:none;position: fixed;top:0;width: 100%;max-width:480px; height: 100%; z-index: 200; background: rgba(0, 0, 0, .5); overflow: hidden; padding: 0 0 15%; }
+.close{ display:block;width:.68rem; height:.68rem; background:url(../images/close.png) no-repeat; border-radius:50%; background-size:100% 100%; position:absolute; right:10px;top:10px;}
+.close:hover{ background:#F90 url(../images/close.png) no-repeat; background-size:100% 100%;}
+.popup-content{display:none;}
+.popup-content{ width:95%; margin:30% auto 0 auto; background:#fff; border-radius:8px; overflow:hidden;}
+.popup-content h3{font-size:.5rem; text-align:center; border-bottom:#ff6600 1px solid; line-height:1.2rem; background:#ff6600; color:#fff; position:relative;}
+.i_box{margin: 20px; text-align:center;}
+.i_box *{vertical-align:middle}
+.i_box a{ display:inline-block; width:1rem; height:1rem;background-color:#ff6600;border:1px solid #ccc;text-decoration:none;color:#fff;line-height:1rem; text-align:center; font-size:1rem;
+border:1px solid #ff6600;}
+.i_box a:hover{color:#000}
+.i_box input{width:2rem;height:1rem;border:1px solid #ff6600; border-left:none; border-right:none;text-align:center;line-height:16px; font-size:.5rem}
+
+.btnok{ display:block;width:95%; margin:20px auto; height:1.24rem; line-height:1.24rem; border-radius:8px; background:#ff6600; color:#fff; text-align:center; font-size:.5rem; border:none;	-webkit-appearance:none;outline:none}
+
+.rxys_text{ margin:15px; padding:20px; font-size:.48rem; color:#9a590b; line-height:2; background:#fad895;}
+.rxys_text p b{ font-size:.64rem;color:#d30b23;}
+.rxys_text p strong{color:#d30b23;}
+/* music */
+    @-webkit-keyframes reverseRotataZ{
+        0%{-webkit-transform: rotateZ(0deg);}
+        100%{-webkit-transform: rotateZ(-360deg);}
+    }
+    @-webkit-keyframes rotataZ{
+        0%{-webkit-transform: rotateZ(0deg);}
+        100%{-webkit-transform: rotateZ(360deg);}
+    }
+    #musicControl { position:fixed;right:10px;top:20px;margin-top:0;display:inline-block;z-index:99999999; line-height:0;}
+    #musicControl a { display:inline-block;width:34px;height:34px;overflow:hidden;background:url('../images/mcbg.png') no-repeat;background-size:100%;}
+    #musicControl a audio{width:100%;height:56px;}
+    #musicControl a.stop { background-position:left bottom;}
+    #musicControl a.on { background-position:0px 1px;-webkit-animation: reverseRotataZ 1.2s linear infinite;}
+    #music_play_filter{width:100%;height:100%;overflow:hidden;position:fixed;top:0;left:0;z-index:99999998;}
+
+.cover-decision {width: 100%;opacity: .7; height: 100%;position: fixed;background-color: #000;top: 0;left: 0;z-index: 100;display: none}
+.cover-decision.show{display: inherit;}
+.mui-cover.show {display: block;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);top: 20%;}
+.mui-cover {background-color: #fff;position: fixed;z-index: 999999;top: 20%;left: 0;right: 0;bottom: 0;-webkit-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);-webkit-transition: -webkit-transform .2s cubic-bezier(0,0,.25,1);transition: transform .2s cubic-bezier(0,0,.25,1);display: none;    font-size: .13rem;  padding-bottom: .6rem;}
+.mui-cover>header {text-align: center;font-size: 14px;position: relative;-webkitbox-shadow: 0 1px 0 rgba(0,0,0,.05),0 .5px 0 rgba(0,0,0,.09);-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05),0 .5px 0 rgba(0,0,0,.09);box-shadow: 0 1px 0 rgba(0,0,0,.05),0 .5px 0 rgba(0,0,0,.09);background-color: #fff;padding: 0 1em;color: #666;z-index: 1;height: 44px;line-height: 44px;overflow: hidden;}
+.mui-cover>header h1 {font-size: inherit;margin: 0;}
+.mui-cover-close{position: absolute;top: .3rem;right: .3rem;color: #ccc;font-size: 22px;line-height:22px;cursor: pointer}
+.mui-flex { border-top: 1px solid #e5e5e5; text-align: center; width: 100%; position: absolute; bottom: 0; left: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;  }
+.mui-flex>.cell {background-color: #DD2727;height: 48px;border: none;font-size: 15px;color: #fff;-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;width: 0;-webkit-flex-basis: 0;-ms-flex-preferred-size: 0;flex-basis: 0;max-width: 100%;display: block;padding: 0!important;position: relative;}
+.list-block {margin: 10px 0;font-size: 0.85rem;}
+.list-block ul {background: #ffffff; list-style: none;padding: 0;margin: 0;position: relative;}
+.list-block li {box-sizing: border-box;position: relative;}
+.list-block .item-content {box-sizing: border-box;padding-left: 0.75rem;min-height: 2.2rem;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-pack: justify;-webkit-justify-content: space-between;justify-content: space-between;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+.list-block .item-inner {padding-right: 0.5rem;position: relative;width: 100%;min-height: 2.2rem;overflow: hidden;box-sizing: border-box;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-flex: 1;-ms-flex: 1;-webkit-box-pack: justify;-webkit-justify-content: space-between;justify-content: space-between;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+.list-block input[type="text"], .list-block input[type="password"], .list-block input[type="search"], .list-block input[type="email"], .list-block input[type="tel"], .list-block input[type="url"], .list-block input[type="date"], .list-block input[type="datetime-local"], .list-block input[type="time"], .list-block input[type="number"], .list-block select, .list-block textarea {  -webkit-appearance: none; -moz-appearance: none;-ms-appearance: none;appearance: none;box-sizing: border-box;border: none;background: none;border-radius: 0 0 0 0;box-shadow: none;display: block;padding: 0 0 0 0.25rem;margin: 0;width: 100%;height: 40px;color: #3d4145;font-size: 16px;font-family: inherit;}
+.list-block .item-input {width: 100%;margin-top: -0.4rem;margin-bottom: -0.35rem;-webkit-box-flex: 1;-ms-flex: 1;-webkit-flex-shrink: 1;-ms-flex: 0 1 auto;-webkit-flex-shrink: 1;flex-shrink: 1;}
+.list-block textarea {height: 80px; resize: none; line-height: 10px;padding-top: 0.4rem;padding-bottom: 0.35rem;}
+.list-block input {height: 40px;resize: none;line-height: 20px;padding-top: 0.4rem;padding-bottom: 0.35rem;}

@@ -1,0 +1,1 @@
+get信息：signature : 1c164cdec4205c106cdc5b220364413a0348acdc , timestamp : 1490082314 , nonce : 1306826351 , openid : oybCwwrbxPkb6KowJiYp0TLgTOpc , post信息：get信息：signature : 8efbf807fab50307b4536905cf3c61248f71aff6 , timestamp : 1490082319 , nonce : 1887980670 , openid : oybCwwrbxPkb6KowJiYp0TLgTOpc , post信息：验证签名未通过！

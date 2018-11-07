@@ -1,0 +1,16 @@
+@charset "utf-8";
+.uploader_bd {margin-bottom: -4px;overflow: hidden;background-color: #fff;}
+.uploader_files {list-style: none;}
+.uploader_file {float: left;margin-right: 9px;margin-bottom: 9px;width: 79px;height: 79px;background: no-repeat center center;background-size: cover;}
+.uploader_input_wrp {float: left;position: relative;margin-right: 9px;margin-bottom: 9px;width: 77px;height: 77px;border: 1px solid #D9D9D9;}
+.uploader_input_wrp:before,.uploader_input_wrp:after {content: " ";position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);background-color: #D9D9D9;}
+.uploader_input_wrp:before {width: 2px;height: 39.5px;}
+.uploader_input_wrp:after {width: 39.5px;height: 2px;}
+.uploader_input_wrp:active {border-color: #999999;}
+.uploader_input_wrp:active:before,.uploader_input_wrp:active:after {background-color: #999999;}
+.uploader_input {position: absolute;z-index: 1;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+.uploader_status .uploader_status_content {position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);color: #FFFFFF;}
+.uploader_status {position: relative;}
+.uploader_status:before {content: " ";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0, 0, 0, 0.5);}
+.icon_cancel {color: #F43530;background:url("../images/delete.png"); font-size: 22px; display: inline-block;vertical-align: middle;text-decoration: inherit;width: 22px;height: 22px;margin-right: .2em;}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+body{ background:#fbe7cf;}
+ul,li,h3{list-style:none; margin:0; padding:0; }
+h3{list-style:none; margin:0; padding:0; line-height:0;}
+.swiper-container{padding:0; margin:0 0 10px  0;}
+.swiper-pagination{ bottom:10px;}
+img{width:100%; max-width:100%;}
+.clear{width:100%; height:0; clear:both;}
+.index{ position:absolute; width:100%; background:#fbe7cf url(../images/bg.jpg) no-repeat; background-size:100%;}
+
+input[type=button]{-webkit-appearance:none;outline:none}
+.popup-text{padding:30px; font-size:.5rem; color:#F00; text-align:center}
+.popup-box,.popup-box2{ display:none;position: fixed;top:0;width: 100%; height: 100%; z-index: 200; background: rgba(0, 0, 0, .5); overflow: hidden; padding: 0 0 15%; }
+.close{ display:block;width:.68rem; height:.68rem; background:url(../images/close.png) no-repeat; border-radius:50%; background-size:100% 100%; position:absolute; right:10px;top:10px;}
+.close:hover{ background:#F90 url(../images/close.png) no-repeat; background-size:100% 100%;}
+.popup-content{display:none;}
+.popup-content{ width:95%; margin:50% auto 0 auto; background:#fff; border-radius:8px; overflow:hidden;}
+.popup-content h3{font-size:.5rem; text-align:center; border-bottom:#ff6600 1px solid; line-height:1.2rem; background:#ff6600; color:#fff; position:relative;}
+/* music */
+    @-webkit-keyframes reverseRotataZ{
+        0%{-webkit-transform: rotateZ(0deg);}
+        100%{-webkit-transform: rotateZ(-360deg);}
+    }
+    @-webkit-keyframes rotataZ{
+        0%{-webkit-transform: rotateZ(0deg);}
+        100%{-webkit-transform: rotateZ(360deg);}
+    }
+    #musicControl { position:fixed;right:10px;top:20px;margin-top:0;display:inline-block;z-index:99999999; line-height:0;}
+    #musicControl a { display:inline-block;width:34px;height:34px;overflow:hidden;background:url('../images/mcbg.png') no-repeat;background-size:100%;}
+    #musicControl a audio{width:100%;height:56px;}
+    #musicControl a.stop { background-position:left bottom;}
+    #musicControl a.on { background-position:0px 1px;-webkit-animation: reverseRotataZ 1.2s linear infinite;}
+    #music_play_filter{width:100%;height:100%;overflow:hidden;position:fixed;top:0;left:0;z-index:99999998;}
+
+.pay_bg{ width:100%; height:100%;  background:#c80106 url(../images/pay_bg.jpg) no-repeat center 0; background-size:100% auto;}
+.pay_body{padding:6.5rem 0 0 0; text-align:center}
+.pay_btn{ width:8.94rem; height:1.62rem; background:url(../images/pay_btn.png) no-repeat center 0; background-size:100% 100%; border:none; font-size:.64rem; color:#faf1da; }
+.pay_btn:active{ opacity:.9; color:#9f4e06; font-weight:bold}
+.pay_txt{ width:8.78rem; height:1.4rem; border:none; background:#fff; border-radius:8px; text-align:center;font-size:.96rem; margin:0 0 10px 0; color:#ff6600; font-weight:bold; line-height:1.4rem;border:#ccc 1px solid;}
+.yuan{position:absolute; font-size:.46rem; color:#ff6600; right:15%; margin:15px 0 0 0}
+
+.pay_txt::-webkit-input-placeholder{
+    color: #aaa; font-weight:normal; font-size:.54rem;
+}

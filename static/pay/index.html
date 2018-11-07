@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<title>慈悲圆满</title>
+<link rel="stylesheet" href="css/mystyle.css">
+<script type="text/javascript" src="js/jquery-1.4.4.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/public.js" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+<div class="index">
+<div class="hongbao">
+<h3><img src="images/title1.png"/></h3>
+<ul>
+<li class="hongbao_a"><div class="i_tips"></div><img src="images/hongbao_a.png"/><p>放生护主红包</p></li>
+<li class="hongbao_b"><div class="i_tips"></div><img src="images/hongbao_b.png"/><p>供灯功德红包</p></li>
+<li class="hongbao_c"><div class="i_tips"></div><img src="images/hongbao_c.png"/><p>佛像贴金红包</p></li>
+<li class="hongbao_d"><div class="i_tips"></div><img src="images/hongbao_d.png"/><p>助印法本经书红包</p></li>
+</ul>
+<div class="clear"></div>
+
+</div>
+
+<div class="popup-box">
+<div class="popup-content" id="hongbao_a_con">
+<h3><a class="close"></a>放生护主红包金额</h3>
+<div class="i_box"><a href="javascript:;" class="J_minus">-</a><input type="text" value="0" class="J_input" /><a href="javascript:;" class="J_add">+</a></div>
+<p><input type="button" class="btnok" value="确 定"></p>
+</div>
+<div class="popup-content" id="hongbao_b_con">
+<h3><a class="close"></a>供灯功德红包金额</h3>
+<div class="i_box"><a href="javascript:;" class="J_minus">-</a><input type="text" value="0" class="J_input" /><a href="javascript:;" class="J_add">+</a></div>
+<p><input type="button" class="btnok" value="确 定"></p>
+</div>
+<div class="popup-content" id="hongbao_c_con">
+<h3><a class="close"></a>佛像贴金红包金额</h3>
+<div class="i_box"><a href="javascript:;" class="J_minus">-</a><input type="text" value="0" class="J_input" /><a href="javascript:;" class="J_add">+</a></div>
+<p><input type="button" class="btnok" value="确 定"></p>
+</div>
+<div class="popup-content" id="hongbao_d_con">
+<h3><a class="close"></a>助印法本经书红包金额</h3>
+<div class="i_box"><a href="javascript:;" class="J_minus">-</a><input type="text" value="0" class="J_input" /><a href="javascript:;" class="J_add">+</a></div>
+<p><input type="button" class="btnok" value="确 定"></p>
+</div>
+</div>
+<div class="popup-box2">
+<div class="popup-content">
+<h3><a class="close"></a>提示</h3>
+<p class="popup-text">红包金额不能为0元，请重新选择！</p>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+$(".hongbao_a").click(function () { 
+$('html').addClass('not-allow-scroll');
+$('.popup-box').show();	
+$('#hongbao_a_con').show();	
+$(this).addClass('on');	
+$('.zfbox').show();		
+});	
+
+
+$(".hongbao_b").click(function () { 
+$('html').addClass('not-allow-scroll');
+$('.popup-box').show();	
+$('#hongbao_b_con').show();	
+$(this).addClass('on');	
+$('.zfbox').show();					
+});	
+
+
+$(".hongbao_c").click(function () { 
+
+$('html').addClass('not-allow-scroll');
+$('.popup-box').show();	
+$('#hongbao_c_con').show();	
+$(this).addClass('on');		
+$('.zfbox').show();				
+});	
+
+
+$(".hongbao_d").click(function () { 
+
+$('html').addClass('not-allow-scroll');
+$('.popup-box').show();	
+$('#hongbao_d_con').show();	
+$(this).addClass('on');		
+$('.zfbox').show();				
+});	
+
+
+
+$(".close").click(function () { 
+$('html').removeClass('not-allow-scroll');
+$('.popup-box').hide();	
+$('.popup-box2').hide();		
+$('.popup-content').hide();	
+
+var hd_value_a=$("#hongbao_a_con .J_input").val(); 	
+var hd_value_b=$("#hongbao_b_con .J_input").val(); 	
+var hd_value_c=$("#hongbao_c_con .J_input").val(); 	
+var hd_value_d=$("#hongbao_d_con .J_input").val(); 	
+
+
+$('.hongbao_a .i_tips').html(hd_value_a+'元');
+$('.hongbao_b .i_tips').html(hd_value_b+'元');	
+$('.hongbao_c .i_tips').html(hd_value_c+'元');	
+$('.hongbao_d .i_tips').html(hd_value_d+'元');	
+var all_hb=parseInt(hd_value_a)+parseInt(hd_value_b)+parseInt(hd_value_c)+parseInt(hd_value_d);
+$('.all_hb').html(all_hb+'元');				
+});	
+
+$(".btnok").click(function () { 
+$('html').removeClass('not-allow-scroll');
+$('.popup-box').hide();		
+$('.popup-content').hide();		
+$('.popup-box2').hide();
+var hd_value_a=$("#hongbao_a_con .J_input").val(); 	
+var hd_value_b=$("#hongbao_b_con .J_input").val(); 	
+var hd_value_c=$("#hongbao_c_con .J_input").val(); 	
+var hd_value_d=$("#hongbao_d_con .J_input").val(); 	
+
+
+$('.hongbao_a .i_tips').html(hd_value_a+'元');
+$('.hongbao_b .i_tips').html(hd_value_b+'元');	
+$('.hongbao_c .i_tips').html(hd_value_c+'元');	
+$('.hongbao_d .i_tips').html(hd_value_d+'元');	
+var all_hb=parseInt(hd_value_a)+parseInt(hd_value_b)+parseInt(hd_value_c)+parseInt(hd_value_d);
+$('.all_hb').html(all_hb+'元');			
+});	
+
+$(".J_add").click(function () { 
+var hd_value_a=$("#hongbao_a_con .J_input").val(); 	
+var hd_value_b=$("#hongbao_b_con .J_input").val(); 	
+var hd_value_c=$("#hongbao_c_con .J_input").val(); 	
+var hd_value_d=$("#hongbao_d_con .J_input").val(); 	
+
+
+$('.hongbao_a .i_tips').html(hd_value_a+'元');
+$('.hongbao_b .i_tips').html(hd_value_b+'元');	
+$('.hongbao_c .i_tips').html(hd_value_c+'元');	
+$('.hongbao_d .i_tips').html(hd_value_d+'元');	
+var all_hb=parseInt(hd_value_a)+parseInt(hd_value_b)+parseInt(hd_value_c)+parseInt(hd_value_d);
+$('.all_hb').html(all_hb+'元');			
+});	
+
+$(".J_minus").click(function () { 
+var hd_value_a=$("#hongbao_a_con .J_input").val(); 	
+var hd_value_b=$("#hongbao_b_con .J_input").val(); 	
+var hd_value_c=$("#hongbao_c_con .J_input").val(); 	
+var hd_value_d=$("#hongbao_d_con .J_input").val(); 	
+
+$('.hongbao_a .i_tips').html(hd_value_a+'元');
+$('.hongbao_b .i_tips').html(hd_value_b+'元');	
+$('.hongbao_c .i_tips').html(hd_value_c+'元');	
+$('.hongbao_d .i_tips').html(hd_value_d+'元');	
+var all_hb=parseInt(hd_value_a)+parseInt(hd_value_b)+parseInt(hd_value_c)+parseInt(hd_value_d);
+$('.all_hb').html(all_hb+'元');		
+});	
+
+
+
+
+
+$(".btn").click(function () {
+	
+var hd_value_a=$("#hongbao_a_con .J_input").val(); 	
+var hd_value_b=$("#hongbao_b_con .J_input").val(); 	
+var hd_value_c=$("#hongbao_c_con .J_input").val(); 	
+var hd_value_d=$("#hongbao_d_con .J_input").val(); 	
+
+
+
+$('.hongbao_a .i_tips').html(hd_value_a+'元');
+$('.hongbao_b .i_tips').html(hd_value_b+'元');	
+$('.hongbao_c .i_tips').html(hd_value_c+'元');	
+$('.hongbao_d .i_tips').html(hd_value_d+'元');	
+var all_hb=parseInt(hd_value_a)+parseInt(hd_value_b)+parseInt(hd_value_c)+parseInt(hd_value_d);	
+ if(all_hb==0){
+$('.popup-box2').show();		 
+$('.popup-content').show();		 
+	 }	
+});	
+
+
+
+});
+
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.list_lh li:even').addClass('lieven');
+})
+$(function(){
+	$("div.list_lh").myScroll({
+		speed:40, //数值越大，速度越慢
+		rowHeight:80 //li的高度
+	});
+});
+</script>
+<div class="list_box">
+<h3><img src="images/title2.png"/></h3>
+<div class="list">
+<div class="list_lh">
+<ul>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+<li><p>·<span>木鱼</span>2016年7月30日捐款<strong>20元</strong></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="zfbox"><div class="all_text">共计：<span class="all_hb"></span></div><input type="button" class="btn" value="去支付"></div>
+<span id="musicControl">
+        <a id="mc_play" class="stop on" onclick="play_music();">
+            <audio id="musicfx" loop autoplay>
+                <source src="mp3/mp3.mp3" type="audio/mpeg">
+            </audio>
+        </a>
+ </span>
+
+<script>
+function play_music(){
+        if ($('#mc_play').hasClass('on')){
+            $('#mc_play audio').get(0).pause();
+            $('#mc_play').attr('class','stop');
+        }else{
+            $('#mc_play audio').get(0).play();
+            $('#mc_play').attr('class','on');
+        }
+        $('#music_play_filter').hide();
+        event.stopPropagation(); //阻止冒泡 
+    }
+    function just_play(id){
+        $('#mc_play audio').get(0).play();
+        $('#mc_play').attr('class','on');
+        if (typeof(id)!='undefined'){
+            $('#music_play_filter').hide();
+        }
+        event.stopPropagation(); //阻止冒泡 
+    } 
+   
+</script>
+</div>
+</body>
+</html>
